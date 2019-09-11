@@ -43,7 +43,7 @@ class App extends React.Component {
     try {
       //using await keyword to wait for the response
       const response = await fetch(
-        `https://api.giphy.com/v1/gifs/search?api_key=zvOylnbGt1lpXjoTktERUActtQgrRAjW&q=${searchTerm}&limit=25&offset=0&rating=G&lang=en`
+        `https://api.giphy.com/v1/gifs/search?api_key=&q=${searchTerm}&limit=25&offset=0&rating=G&lang=en`
       );
       //waiting for response to convert into json
       const { data } = await response.json();
